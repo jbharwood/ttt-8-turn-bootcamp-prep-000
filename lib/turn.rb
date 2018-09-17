@@ -13,6 +13,7 @@ end
 def move(array, index, value = "X")
   array[index] = value
 end
+
 def valid_move?(board, index)
   index = index.to_i
   if index.between?(0, 8) == true && !position_taken?(board, index)
